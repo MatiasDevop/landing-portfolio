@@ -1,0 +1,30 @@
+---
+description: SMIT Portfolio stack, paths, and structure
+alwaysApply: true
+---
+
+# SMIT UI/UX Designer Portfolio – Project Overview
+
+## Stack
+- **Framework**: Next.js 16 (App Router)
+- **UI**: React 19, TypeScript 5.7
+- **Styling**: Tailwind CSS 4, PostCSS
+- **Components**: Radix UI primitives, Lucide icons, shadcn-style (CVA, clsx, tailwind-merge)
+
+## Path aliases (tsconfig)
+- `@/*` → project root (e.g. `@/src/components/portfolio-page`, `@/app/page`)
+- `@/assets/*` → `./src/assets/*` (images, Figma assets)
+
+Use these for imports; avoid deep relative paths when a simple `@/...` works.
+
+## Structure
+- `app/` – Next routes (`layout.tsx`, `page.tsx`), **single** `globals.css` (theme and Tailwind)
+- `src/components/portfolio-page/` – home page: `index.tsx` (PortfolioPage) plus section components (`hero-section.tsx`, `intro-section.tsx`, `services-section.tsx`, `latest-work-section.tsx`, `contact-section.tsx`)
+- `lib/imports/` – Figma-derived SVG path data and assets (`svg-u2dm5opmgk.ts`, `svg-uhqxr.tsx`) used by portfolio sections.
+- `src/lib/` – shared helpers (e.g. `img-src.ts`)
+- Entry: `app/page.tsx` renders `PortfolioPage` from `@/src/components/portfolio-page`
+
+## Conventions
+- Prefer functional components and hooks.
+- Use Tailwind for layout and styling; inline `style` only when needed (e.g. dynamic values, Figma parity).
+- Keep shared utilities and helpers in a dedicated folder (e.g. `src/lib/`) when they grow.

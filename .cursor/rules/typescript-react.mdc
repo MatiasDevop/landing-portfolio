@@ -1,0 +1,38 @@
+---
+alwaysApply: true
+---
+# TypeScript & React Conventions
+
+## General
+- Use **strict** TypeScript; avoid `any` unless necessary and document why.
+- Prefer `interface` for object shapes and `type` for unions/aliases.
+
+## React
+- Use **functional components**; extract reusable logic into custom hooks.
+- Type props explicitly: `React.PropsWithChildren<{}>`, `React.ComponentProps<'div'>`, or named interfaces.
+- For event handlers, use React types: `React.MouseEventHandler<HTMLButtonElement>`, etc.
+
+## Imports
+- Use path aliases: `@/src/...`, `@/assets/...`.
+- Group: React/external libs first, then internal (components, lib, assets).
+
+## Examples
+
+```tsx
+// ✅ Props with explicit interface
+interface CardProps {
+  title: string;
+  children?: React.ReactNode;
+}
+function Card({ title, children }: CardProps) {
+  return <div data-title={title}>{children}</div>;
+}
+
+// ✅ Next image result: use .src for CSS url()
+function imgSrc(img: string | { src: string; height?: number; width?: number }): string {
+  return typeof img === "string" ? img : img.src;
+}
+```
+
+## Error handling
+- In async code, log and rethrow or surface errors; avoid empty `catch` blocks.

@@ -1,0 +1,28 @@
+---
+description: Patterns for Figma-derived Frame components and image usage
+globs: "src/imports/**/*.tsx,**/Frame*.tsx"
+alwaysApply: false
+---
+
+# Figma / Frame Component Conventions
+
+## Image handling
+- **Next image imports** can return `{ src, height, width }`. For CSS `url()` (e.g. `backgroundImage`, `maskImage`), always use a string. Use the project `imgSrc()` helper when the same file is used in both `src/App.tsx` and Figma-import files:
+
+```tsx
+function imgSrc(img: string | { src: string; height?: number; width?: number }): string {
+  return typeof img === "string" ? img : img.src;
+}
+// Usage:
+style={{ backgroundImage: `url('${imgSrc(imgImage4)}')` }}
+```
+
+- In **Figma-import modules** (e.g. `Frame2147229266.tsx`), imports may use `figma:asset/...`; in app code they use `@/assets/...`. Do not mix the two in the same file; keep asset paths consistent per file.
+
+## Frame components
+- Frame components are presentational: keep them as pure functions returning JSX; avoid business logic.
+- Preserve `data-name` where it helps trace back to Figma (e.g. `data-name="Mask group"`).
+- Use Tailwind for layout/sizing when it matches the design; use inline `style` for one-off values (e.g. gradients, transforms, mask URLs).
+
+## Assets
+- Shared images live under `src/assets/`. Reference them via `@/assets/...` in app and lib code.

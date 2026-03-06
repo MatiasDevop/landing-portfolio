@@ -1,4 +1,4 @@
-import { IconDecorativeDot } from '@/src/components/icons'
+import { IconDecorativeDot } from '@/components/icons'
 
 export interface HeroDecorativeDotProps {
 	/** Wrapper class, e.g. "flex-none rotate-[342.329deg]" */
@@ -7,7 +7,7 @@ export interface HeroDecorativeDotProps {
 
 /**
  * Single decorative dot used in hero decorative shapes.
- * Uses IconDecorativeDot from @/src/components/icons.
+ * Uses IconDecorativeDot from @/components/icons.
  */
 export function HeroDecorativeDot({ className = 'flex-none' }: HeroDecorativeDotProps) {
 	return (

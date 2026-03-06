@@ -1,10 +1,10 @@
 import type { IconProps } from './icon-props'
 
 /**
- * Left decorative stroke path (206×114). Hero decorative block left.
- * Import from @/src/components/icons.
+ * Decorative circle with stroke (hero decorative shapes).
+ * Import from @/components/icons.
  */
-export function IconDecorativeLineLeft({
+export function IconDecorativeDot({
 	className = 'block size-full',
 	'aria-hidden': ariaHidden = true,
 }: IconProps) {
@@ -13,11 +13,14 @@ export function IconDecorativeLineLeft({
 			className={className}
 			fill="none"
 			preserveAspectRatio="none"
-			viewBox="0 0 206 114"
+			viewBox="0 0 14 14"
 			aria-hidden={ariaHidden}
 		>
-			<path
-				d="M1 113.5V1H205.5V113.5H1Z"
+			<circle
+				cx="7"
+				cy="7"
+				fill="var(--fill-0, #0A0A0C)"
+				r="6.5"
 				stroke="var(--stroke-0, #EBFF57)"
 			/>
 		</svg>

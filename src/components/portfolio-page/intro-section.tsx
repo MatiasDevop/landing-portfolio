@@ -1,6 +1,6 @@
 import img67169C724B33367B1Ed2Ed5DServices0411 from '@/assets/a29cb6a61a4b30953b062bad709f9d690e929efd.png'
 import img66F5A97Dc6142Aa5D1E24Cc8TextImages011 from '@/assets/ea8d13a176bb05967485497ec15e92aafb4f4d8e.png'
-import { imgSrc } from '@/src/lib/img-src'
+import { imgSrc } from '@/lib/img-src'
 
 function Frame2147227226() {
   return (

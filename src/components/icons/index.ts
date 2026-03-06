@@ -1,6 +1,6 @@
 /**
  * Central export for SVG icon components. Import icons from here:
- * import { IconDecorativeDot, IconColorIndicatorPill } from '@/src/components/icons'
+ * import { IconDecorativeDot, IconColorIndicatorPill } from '@/components/icons'
  */
 export type { IconProps } from './icon-props'
 export { IconDecorativeDot } from './decorative-dot-icon'

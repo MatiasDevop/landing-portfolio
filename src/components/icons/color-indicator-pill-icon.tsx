@@ -2,7 +2,7 @@ import type { IconProps } from './icon-props'
 
 /**
  * Four-dot color theme indicator pill (150×42). Hero color indicator.
- * Import from @/src/components/icons.
+ * Import from @/components/icons.
  */
 export function IconColorIndicatorPill({
 	className = 'block size-full',

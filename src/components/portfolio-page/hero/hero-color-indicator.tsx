@@ -1,8 +1,8 @@
-import { IconColorIndicatorPill } from '@/src/components/icons'
+import { IconColorIndicatorPill } from '@/components/icons'
 
 /**
  * Hero color theme indicator (four-dot pill).
- * Uses IconColorIndicatorPill from @/src/components/icons.
+ * Uses IconColorIndicatorPill from @/components/icons.
  */
 export function HeroColorIndicator() {
 	return (

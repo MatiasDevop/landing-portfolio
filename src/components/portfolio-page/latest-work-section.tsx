@@ -1,7 +1,7 @@
 import svgPaths from "@/lib/imports/svg-u2dm5opmgk";
 import imgImage5 from "@/assets/21939f8fbfefedaaa9c4760682483fe6022b1043.png";
 import { imgImage6 } from "@/lib/imports/svg-uhqxr";
-import { imgSrc } from "@/src/lib/img-src";
+import { imgSrc } from "@/lib/img-src";
 
 function Frame19() {
   return (

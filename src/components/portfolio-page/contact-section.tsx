@@ -304,11 +304,11 @@ function DecorativeIconGear() {
   );
 }
 
-/** "Let's" heading line with globe graphic. */
+/** "Let&apos;s" heading line with globe graphic. */
 function HeadingLineLets() {
   return (
     <div className="flex flex-row gap-[30px] items-end justify-center">
-      <span className={`${fontHeading} shrink-0 text-nowrap`}>Let's</span>
+      <span className={`${fontHeading} shrink-0 text-nowrap`}>Let&apos;s</span>
       <DecorativeIconGlobe />
     </div>
   );

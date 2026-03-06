@@ -5,7 +5,7 @@ const SVG_PATH_ASTERISK =
 
 /**
  * Small asterisk (17×17). Used in section labels (Our Service, Our Latest Work).
- * Single source of path data; import from @/src/components/icons.
+ * Single source of path data; import from @/components/icons.
  */
 export function IconAsteriskSection({
 	className = 'block size-full',

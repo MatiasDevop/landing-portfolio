@@ -1,0 +1,16 @@
+
+> smit-ui-ux-designer-portfolio@0.1.0 dev F:\next-apps\SMIT UI_UX Designer Portfolio
+> next dev --webpack
+
+▲ Next.js 16.1.6 (webpack)
+- Local:         http://localhost:3001
+- Network:       http://100.81.57.196:3001
+
+✓ Starting...
+✓ Ready in 2.2s
+ GET / 200 in 2.5s (compile: 2.2s, render: 291ms)
+ GET / 200 in 200ms (compile: 119ms, render: 81ms)
+ GET / 200 in 35ms (compile: 3ms, render: 32ms)
+ GET / 200 in 87ms (compile: 2ms, render: 85ms)
+ GET / 200 in 50ms (compile: 3ms, render: 47ms)
+ ELIFECYCLE  Command failed with exit code 1.

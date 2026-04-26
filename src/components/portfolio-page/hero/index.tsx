@@ -76,12 +76,11 @@ export function HeroSection() {
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row lg:items-start">
               <HeroCtaButton label="Get Started" href="#contact" />
-              <a
+              <HeroCtaButton
+                label="View Portfolio"
                 href="#portfolio"
-                className="inline-flex min-h-11 items-center justify-center rounded-full border border-[var(--portfolio-border)] px-6 py-3 text-base text-white/80 transition hover:border-white/30 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--portfolio-accent)]"
-              >
-                View Portfolio
-              </a>
+                variant="secondary"
+              />
             </div>
           </div>
           <HeroVisuals />

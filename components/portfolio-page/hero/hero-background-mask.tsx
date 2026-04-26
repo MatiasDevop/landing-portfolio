@@ -1,5 +1,5 @@
 import imgRectangle1 from '@/assets/f82869a80f906e1c6f7e3d916e35962fe320f428.png'
-import { imgSrc } from '@/src/lib/img-src'
+import { imgSrc } from '@/lib/img-src'
 
 /**
  * Hero radial gradient background with mask.

@@ -9,7 +9,7 @@ export function HeroHeadline() {
 				className="font-['Clash_Grotesk:Medium',sans-serif] min-w-full relative shrink-0 text-[102px]"
 				style={{ width: 'min-content' }}
 			>
-				<p className="block leading-[90.72%]">I'm SMIT, a UI/UX Designer</p>
+				<p className="block leading-[90.72%]">I&apos;m SMIT, a UI/UX Designer</p>
 			</div>
 			<div className="font-['Clash_Grotesk:Regular',sans-serif] relative shrink-0 text-[24px] w-[635px]">
 				<p className="block leading-[normal]">

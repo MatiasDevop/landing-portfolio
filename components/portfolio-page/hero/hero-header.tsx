@@ -1,22 +1,21 @@
-import { HeroNav } from './hero-nav'
-import { HeroCtaButton } from './hero-cta-button'
+import { HeroNav } from "./hero-nav";
+import { HeroCtaButton } from "./hero-cta-button";
 
-/**
- * Hero header: logo, nav, and primary CTA.
- * Composes nav and CTA; single place for header layout.
- */
 export function HeroHeader() {
-	return (
-		<header
-			className="absolute bg-(--portfolio-surface) box-border content-stretch flex flex-row items-center justify-between px-[100px] py-5 top-0 translate-x-[-50%] w-[1920px]"
-			style={{ left: 'calc(50% + 0.5px)' }}
-		>
-			<div className="absolute border border-(--portfolio-border) border-solid inset-0 pointer-events-none" />
-			<div className="font-['Clash_Grotesk:Semibold',sans-serif] leading-0 not-italic relative shrink-0 text-(--portfolio-foreground) text-[37px] text-center text-nowrap">
-				<p className="block leading-[normal] whitespace-pre">SMIT.</p>
-			</div>
-			<HeroNav />
-			<HeroCtaButton label="Contact Us" />
-		</header>
-	)
+  return (
+    <header className="absolute inset-x-0 top-0 z-20 border-b border-[var(--portfolio-border)] bg-black/30 backdrop-blur-xl">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-6 py-5 sm:px-8 lg:px-12">
+        <a
+          href="#home"
+          className="shrink-0 text-3xl font-semibold tracking-tight text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--portfolio-accent)]"
+        >
+          SMIT.
+        </a>
+        <HeroNav />
+        <div className="hidden lg:block">
+          <HeroCtaButton label="Contact Us" href="#contact" />
+        </div>
+      </div>
+    </header>
+  );
 }

@@ -2,7 +2,7 @@ import type { IconProps } from './icon-props'
 
 /**
  * Right decorative stroke path (261×115). Hero decorative block right.
- * Import from @/src/components/icons.
+ * Import from @/components/icons.
  */
 export function IconDecorativeLineRight({
 	className = 'block size-full',

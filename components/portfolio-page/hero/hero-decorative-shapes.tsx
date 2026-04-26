@@ -1,4 +1,4 @@
-import { IconDecorativeLineLeft, IconDecorativeLineRight } from '@/src/components/icons'
+import { IconDecorativeLineLeft, IconDecorativeLineRight } from '@/components/icons'
 import { HeroDecorativeDot } from './hero-decorative-dot'
 
 /** Left-side decorative line + dots + "UI/UX" label. */

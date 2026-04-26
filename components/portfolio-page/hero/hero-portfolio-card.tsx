@@ -1,4 +1,4 @@
-import { imgSrc } from '@/src/lib/img-src'
+import { imgSrc } from '@/lib/img-src'
 
 export interface HeroPortfolioCardProps {
 	image: string | { src: string; height?: number; width?: number }

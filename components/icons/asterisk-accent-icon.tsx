@@ -5,7 +5,7 @@ const SVG_PATH_ACCENT =
 
 /**
  * Accent asterisk (40×40). Used between social links in contact.
- * Import from @/src/components/icons.
+ * Import from @/components/icons.
  */
 export function IconAsteriskAccent({
 	className = 'size-10 shrink-0',

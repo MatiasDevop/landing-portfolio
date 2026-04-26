@@ -10,14 +10,20 @@ import { ContactSection } from "./contact-section";
  */
 export function PortfolioPage() {
   return (
-    <div className="bg-(--portfolio-bg) relative size-full">
-      <div className="absolute box-border content-stretch flex flex-col gap-40 items-center justify-start left-[-5px] p-0 top-0 w-[1925px] bg-(--portfolio-bg)">
-        <HeroSection />
+    <main className="bg-(--portfolio-bg) text-(--portfolio-foreground)">
+      <HeroSection />
+      <section id="about" aria-label="About Smit" className="scroll-mt-32">
         <IntroSection />
+      </section>
+      <section id="services" aria-label="Services" className="scroll-mt-32">
         <ServicesSection />
+      </section>
+      <section id="portfolio" aria-label="Latest work" className="scroll-mt-32">
         <LatestWorkSection />
+      </section>
+      <section id="contact" aria-label="Contact" className="scroll-mt-32">
         <ContactSection />
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }

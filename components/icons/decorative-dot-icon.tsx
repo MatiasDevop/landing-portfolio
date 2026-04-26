@@ -2,7 +2,7 @@ import type { IconProps } from './icon-props'
 
 /**
  * Decorative circle with stroke (hero decorative shapes).
- * Import from @/src/components/icons.
+ * Import from @/components/icons.
  */
 export function IconDecorativeDot({
 	className = 'block size-full',

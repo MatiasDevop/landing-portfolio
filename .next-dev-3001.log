@@ -1,0 +1,11 @@
+
+> smit-ui-ux-designer-portfolio@0.1.0 dev F:\next-apps\SMIT UI_UX Designer Portfolio
+> next dev "--port" "3001"
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://100.81.57.196:3001
+
+✓ Starting...
+Failed to benchmark file I/O: The system cannot find the path specified. (os error 3)
+✓ Ready in 2.2s
